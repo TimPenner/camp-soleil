@@ -55,7 +55,7 @@ async function handleSubmit(e) {
   } catch (err) {
     btn.textContent = 'Submit Application';
     btn.disabled = false;
-    alert('Something went wrong — please email us directly at patricijapenner@gmail.com');
+    alert('Something went wrong — please try again or contact us directly through the form.');
   }
 }
 
