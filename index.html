@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camp Soleil — French Immersion Summer Learning Program</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <i class="ph-duotone ph-sun logo-sun-icon"></i>
+        <span class="logo-text">Camp <span class="logo-accent">Soleil</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#team">Teachers</a></li>
+        <li><a href="#evaluation">Assessment</a></li>
+        <li><a href="#contact" class="nav-cta">Register Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#program" onclick="closeMobile()">Program</a></li>
+      <li><a href="#schedule" onclick="closeMobile()">Schedule</a></li>
+      <li><a href="#pricing" onclick="closeMobile()">Pricing</a></li>
+      <li><a href="#team" onclick="closeMobile()">Teachers</a></li>
+      <li><a href="#evaluation" onclick="closeMobile()">Assessment</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Register Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-content">
+      <div class="badge">Grades 1–4 &nbsp;|&nbsp; Fully in French &nbsp;|&nbsp; Max 5 Students</div>
+      <h1>Learn, <span class="accent-green">Grandir,</span><br>and <span class="accent-pink">Grow</span> Together</h1>
+      <p class="hero-sub">A French immersion summer learning program where kids strengthen literacy, numeracy, and creativity — entirely in French. Led by two certified teachers in a small, nurturing group of just 5 students.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Register Today</a>
+        <a href="#program" class="btn btn-outline">See the Program</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Sessions Available</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5</span><span class="stat-label">Students Max</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100<span style="font-size:1.2rem">%</span></span><span class="stat-label">French Immersion</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-frame">
+        <div class="hero-img-placeholder">
+          <i class="ph-duotone ph-chalkboard-teacher hero-placeholder-icon"></i>
+          <p>Photo of kids at camp</p>
+        </div>
+        <div class="floating-card card-math">
+          <i class="ph-duotone ph-calculator"></i> Les maths
+        </div>
+        <div class="floating-card card-read">
+          <i class="ph-duotone ph-book-open"></i> La lecture
+        </div>
+        <div class="floating-card card-run">
+          <i class="ph-duotone ph-person-simple-run"></i> Dehors!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-placeholder">
+            <i class="ph-duotone ph-users-three about-placeholder-icon"></i>
+            <p>Patricia &amp; Francesca</p>
+          </div>
+          <div class="about-badge-float">
+            <span class="big-num">2:5</span>
+            <span class="small-label">Teacher-to-Student Ratio</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-tag">À propos de nous</div>
+          <h2>The Best of Both Worlds — <span class="accent-blue">En Français</span></h2>
+          <p>Private tutoring can be costly, and traditional camps often lack meaningful academic focus. Our French Immersion Summer Learning Program gives your child both: real academic growth, afternoon enrichment, and full French immersion — without the private tutoring price tag.</p>
+          <p>With just 5 students and 2 certified teachers, every child gets the personalized attention they deserve. Lessons are grounded in the <strong>Science of Reading</strong> and delivered using a <strong>multi-sensory approach</strong> — all in French, all day long.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="hi-icon"><i class="ph-duotone ph-seal-check"></i></span>
+              <div><strong>100% French Immersion</strong><br><small>The entire program is conducted in French — a natural, engaging environment</small></div>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon"><i class="ph-duotone ph-seal-check"></i></span>
+              <div><strong>Science of Reading Methods</strong><br><small>Literacy instruction grounded in research, delivered multi-sensorially</small></div>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon"><i class="ph-duotone ph-seal-check"></i></span>
+              <div><strong>Certified Specialists on Staff</strong><br><small>Reading Specialist &amp; Special Education Specialist — both actively certified</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAM ===== -->
+  <section id="program" class="bg-light-wave">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Le Programme</div>
+        <h2>Morning <span class="accent-blue">Academics</span> + Afternoon <span class="accent-pink">Enrichment</span></h2>
+        <p>Each day is split between focused academic learning in the morning and creative, active enrichment in the afternoon — entirely in French.</p>
+      </div>
+
+      <div class="program-block-header">
+        <div class="program-block-label morning-label">
+          <i class="ph-duotone ph-sun-horizon"></i> Matin — Morning Focus
+        </div>
+      </div>
+      <div class="program-grid program-grid-2">
+        <div class="program-card card-color-1">
+          <div class="pc-icon"><i class="ph-duotone ph-book-open"></i></div>
+          <h3>Literacy &amp; Reading</h3>
+          <p>Reading, writing, and phonics instruction grounded in the Science of Reading. Students build confidence through hands-on, multi-sensory lessons.</p>
+        </div>
+        <div class="program-card card-color-2">
+          <div class="pc-icon"><i class="ph-duotone ph-calculator"></i></div>
+          <h3>Numeracy &amp; Math</h3>
+          <p>Number sense, problem solving, and math fluency through interactive games and activities that make numbers click.</p>
+        </div>
+      </div>
+
+      <div class="program-block-header" style="margin-top: 40px;">
+        <div class="program-block-label afternoon-label">
+          <i class="ph-duotone ph-leaf"></i> Après-midi — Afternoon Enrichment
+        </div>
+      </div>
+      <div class="program-grid">
+        <div class="program-card card-color-3">
+          <div class="pc-icon"><i class="ph-duotone ph-paint-brush"></i></div>
+          <h3>Art</h3>
+          <p>Drawing, crafts, and visual projects that spark creative expression and imagination.</p>
+        </div>
+        <div class="program-card card-color-4">
+          <div class="pc-icon"><i class="ph-duotone ph-person-simple-run"></i></div>
+          <h3>Physical Education</h3>
+          <p>Team games, movement activities, and daily active play that keeps bodies strong and minds refreshed.</p>
+        </div>
+        <div class="program-card card-color-5">
+          <div class="pc-icon"><i class="ph-duotone ph-tree"></i></div>
+          <h3>Outdoor Exploration</h3>
+          <p>Nature-based curiosity, outdoor observation, and discovery activities beyond the classroom.</p>
+        </div>
+        <div class="program-card card-color-6">
+          <div class="pc-icon"><i class="ph-duotone ph-music-notes"></i></div>
+          <h3>Music, Drama &amp; Dance</h3>
+          <p>Performing arts, rhythm, movement, and storytelling that build confidence and self-expression.</p>
+        </div>
+        <div class="program-card card-color-1" style="grid-column: span 1;">
+          <div class="pc-icon"><i class="ph-duotone ph-atom"></i></div>
+          <h3>STEM</h3>
+          <p>Hands-on experiments, building challenges, and curiosity-driven science and engineering activities.</p>
+        </div>
+      </div>
+
+      <div class="french-banner">
+        <i class="ph-duotone ph-flag ph-flag-icon"></i>
+        <div>
+          <strong>Tout en français — All day, every day</strong>
+          <span>The entire program is conducted in French, providing students with immersive language experience in a natural, low-pressure setting.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DAILY SCHEDULE ===== -->
+  <section id="schedule">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Sample Day</div>
+        <h2>A <span class="accent-green">Typical Day</span> at Camp Soleil</h2>
+        <p>Structured and purposeful in the morning, creative and active in the afternoon — always in French.</p>
+      </div>
+      <div class="schedule-timeline">
+        <div class="tl-item">
+          <div class="tl-time">9:00 AM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Bonjour! Morning Circle</strong><br>Greetings, calendar, weather, and the day's preview — all in French</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">9:20 AM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Literacy Block</strong><br>Reading, phonics, writing, and comprehension using multi-sensory methods</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">10:30 AM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Snack Break</strong><br>A healthy organic snack is provided; free movement and socializing</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">10:45 AM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Numeracy Block</strong><br>Hands-on math games, problem solving, and fluency activities</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">12:00 PM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Lunch &amp; Outdoor Play</strong><br>Students bring their own lunch; unstructured outdoor time follows</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">1:00 PM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Enrichment Block 1</strong><br>Rotating: Art, STEM, or Music/Drama/Dance</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">2:00 PM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Enrichment Block 2</strong><br>Physical education or outdoor exploration activity</div>
+        </div>
+        <div class="tl-item last">
+          <div class="tl-time">3:00 PM</div>
+          <div class="tl-dot"></div>
+          <div class="tl-content"><strong>Au revoir! Wrap-Up &amp; Dismissal</strong><br>Daily reflection, share-out, and pickup (extended hours available until 5:00 PM)</div>
+        </div>
+      </div>
+
+      <!-- Session Dates -->
+      <div class="session-cards">
+        <div class="session-card">
+          <div class="session-label">Session 1</div>
+          <h3>Week One</h3>
+          <p class="session-dates"><i class="ph-duotone ph-calendar session-cal-icon"></i> July 6 – 10, 2026</p>
+          <p>Monday – Friday &nbsp;|&nbsp; 9:00 AM – 3:00 PM</p>
+          <div class="session-spots">5 spots available</div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply for Week 1</a>
+        </div>
+        <div class="session-card session-card-alt">
+          <div class="session-label">Session 2</div>
+          <h3>Week Two</h3>
+          <p class="session-dates"><i class="ph-duotone ph-calendar session-cal-icon"></i> July 13 – 17, 2026</p>
+          <p>Monday – Friday &nbsp;|&nbsp; 9:00 AM – 3:00 PM</p>
+          <div class="session-spots">5 spots available</div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply for Week 2</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section id="pricing" class="bg-light-wave">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Les tarifs</div>
+        <h2>Simple, <span class="accent-pink">Transparent</span> Pricing</h2>
+        <p>Quality education at a fraction of the cost of private tutoring — with more fun included.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-icon"><i class="ph-duotone ph-calendar-check"></i></div>
+          <div class="pricing-label">One Week</div>
+          <div class="pricing-price">$600</div>
+          <div class="pricing-period">per week</div>
+          <ul class="pricing-features">
+            <li><i class="ph-duotone ph-check-circle"></i> Full 5-day session</li>
+            <li><i class="ph-duotone ph-check-circle"></i> 9:00 AM – 3:00 PM daily</li>
+            <li><i class="ph-duotone ph-check-circle"></i> Morning academics + enrichment</li>
+            <li><i class="ph-duotone ph-check-circle"></i> Healthy organic snack included</li>
+            <li><i class="ph-duotone ph-check-circle"></i> 100% French immersion</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Apply — 1 Week</a>
+        </div>
+
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-badge-top">Best Value</div>
+          <div class="pricing-icon"><i class="ph-duotone ph-star"></i></div>
+          <div class="pricing-label">Both Weeks</div>
+          <div class="pricing-price">$1,200</div>
+          <div class="pricing-period">weeks 1 &amp; 2 combined</div>
+          <ul class="pricing-features">
+            <li><i class="ph-duotone ph-check-circle"></i> Both sessions (July 6–17)</li>
+            <li><i class="ph-duotone ph-check-circle"></i> 9:00 AM – 3:00 PM daily</li>
+            <li><i class="ph-duotone ph-check-circle"></i> Morning academics + enrichment</li>
+            <li><i class="ph-duotone ph-check-circle"></i> Healthy organic snack included</li>
+            <li><i class="ph-duotone ph-check-circle"></i> 100% French immersion</li>
+            <li class="feature-highlight"><i class="ph-duotone ph-gift"></i> <strong>Free pre-camp academic assessment</strong></li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Apply — Both Weeks</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-icon"><i class="ph-duotone ph-clock-countdown"></i></div>
+          <div class="pricing-label">Extended Hours</div>
+          <div class="pricing-price">+$100</div>
+          <div class="pricing-period">add-on, per week</div>
+          <ul class="pricing-features">
+            <li><i class="ph-duotone ph-check-circle"></i> Pickup until 5:00 PM</li>
+            <li><i class="ph-duotone ph-check-circle"></i> Supervised quiet activities</li>
+            <li><i class="ph-duotone ph-check-circle"></i> Available for either session</li>
+            <li><i class="ph-duotone ph-check-circle"></i> Perfect for busy families</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Add to Registration</a>
+        </div>
+
+      </div>
+
+      <div class="payment-note">
+        <i class="ph-duotone ph-currency-circle-dollar payment-note-icon"></i>
+        <div>
+          <strong>How payment works</strong>
+          <span>Submit your application and we'll review it personally. If accepted, we'll follow up by email with payment instructions. Payment is by <strong>Interac e-Transfer</strong> — details provided upon acceptance. Spots are only held once payment is received.</span>
+        </div>
+      </div>
+
+      <div class="what-to-bring">
+        <div class="wtb-icon"><i class="ph-duotone ph-backpack"></i></div>
+        <div class="wtb-content">
+          <strong>What to Bring Each Day</strong>
+          <span>Packed lunch &nbsp;·&nbsp; Water bottle &nbsp;·&nbsp; Daily snack &nbsp;·&nbsp; We provide one healthy organic snack each day</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Vos enseignantes</div>
+        <h2>Meet <span class="accent-pink">Patricia &amp; Francesca</span></h2>
+        <p>Two certified, experienced educators who understand how to balance academic growth with summer fun — and make it all happen in French.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo-placeholder">
+            <i class="ph-duotone ph-user-circle team-placeholder-icon"></i>
+          </div>
+          <div class="team-info">
+            <h3>Patricia Penner</h3>
+            <div class="team-title">Reading Specialist &amp; Camp Co-Director</div>
+            <p>A certified educator and Reading Specialist with deep expertise in literacy instruction grounded in the Science of Reading. Patricia brings warmth, structure, and a genuine passion for helping every child unlock the joy of reading and writing.</p>
+            <div class="team-tags">
+              <span class="tag">Reading Specialist</span>
+              <span class="tag">Science of Reading</span>
+              <span class="tag">French Immersion</span>
+            </div>
+            <a href="mailto:patricijapenner@gmail.com" class="team-email">
+              <i class="ph ph-envelope"></i> patricijapenner@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo-placeholder tp-alt">
+            <i class="ph-duotone ph-user-circle team-placeholder-icon tp-alt-icon"></i>
+          </div>
+          <div class="team-info">
+            <h3>Francesca Gitto</h3>
+            <div class="team-title">Special Education Specialist &amp; Camp Co-Director</div>
+            <p>A certified educator and Special Education Specialist skilled at differentiating instruction for diverse learners. Francesca brings creativity, energy, and an inclusive approach that ensures every child thrives — whether in math, movement, or the arts.</p>
+            <div class="team-tags">
+              <span class="tag">Special Ed Specialist</span>
+              <span class="tag">Differentiated Learning</span>
+              <span class="tag">Enrichment Activities</span>
+            </div>
+            <a href="mailto:francescagitto@hotmail.com" class="team-email">
+              <i class="ph ph-envelope"></i> francescagitto@hotmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVALUATION ===== -->
+  <section id="evaluation" class="bg-light-wave">
+    <div class="container">
+      <div class="eval-grid">
+        <div class="eval-text">
+          <div class="section-tag">Pour les parents</div>
+          <h2>A Free Academic Assessment — <span class="accent-blue">Included with Both Weeks</span></h2>
+          <p>When you register for both sessions, your child receives a <strong>complimentary academic assessment before camp begins</strong>. This is a professional evaluation — the same kind our certified specialists use in school — that helps us tailor the program specifically to your child.</p>
+          <p>The assessment covers:</p>
+          <ul class="eval-list">
+            <li><i class="ph-duotone ph-book-open eval-icon eval-icon-blue"></i> <strong>Reading level</strong> — current level, strengths, and next steps</li>
+            <li><i class="ph-duotone ph-calculator eval-icon eval-icon-green"></i> <strong>Math fluency</strong> — number sense, gaps, and grade-level benchmarks</li>
+            <li><i class="ph-duotone ph-pencil-line eval-icon eval-icon-orange"></i> <strong>Writing skills</strong> — mechanics, expression, and development stage</li>
+            <li><i class="ph-duotone ph-translate eval-icon eval-icon-pink"></i> <strong>French language comfort</strong> — familiarity and confidence level in French</li>
+            <li><i class="ph-duotone ph-smiley eval-icon eval-icon-purple"></i> <strong>Learning profile</strong> — how your child learns best so we can meet them there</li>
+          </ul>
+          <p class="eval-note">Results are shared with parents and used to personalize your child's experience from day one. The assessment is conducted before camp starts — register for both weeks to receive it at no extra cost.</p>
+          <a href="#contact" class="btn btn-primary">Register for Both Weeks</a>
+        </div>
+        <div class="eval-visual">
+          <div class="eval-card-mock">
+            <div class="ecm-header">
+              <i class="ph-duotone ph-sun ecm-sun-icon"></i>
+              <div>
+                <div class="ecm-title">Academic Assessment</div>
+                <div class="ecm-sub">Pre-Camp Learning Profile</div>
+              </div>
+            </div>
+            <div class="ecm-bars">
+              <div class="ecm-bar-row">
+                <span>Reading</span>
+                <div class="ecm-bar"><div class="ecm-fill" style="width:82%">82%</div></div>
+              </div>
+              <div class="ecm-bar-row">
+                <span>Math</span>
+                <div class="ecm-bar"><div class="ecm-fill fill-green" style="width:75%">75%</div></div>
+              </div>
+              <div class="ecm-bar-row">
+                <span>Writing</span>
+                <div class="ecm-bar"><div class="ecm-fill fill-yellow" style="width:68%">68%</div></div>
+              </div>
+              <div class="ecm-bar-row">
+                <span>French</span>
+                <div class="ecm-bar"><div class="ecm-fill fill-pink" style="width:71%">71%</div></div>
+              </div>
+              <div class="ecm-bar-row">
+                <span>Profile</span>
+                <div class="ecm-bar"><div class="ecm-fill fill-purple" style="width:88%">88%</div></div>
+              </div>
+            </div>
+            <div class="ecm-footer">
+              <i class="ph-duotone ph-star ecm-star-icon"></i> Ready to personalize your program!
+            </div>
+          </div>
+          <div class="eval-note-card">
+            <i class="ph-duotone ph-gift" style="font-size:1.8rem; color:var(--green); flex-shrink:0;"></i>
+            <div><strong>Included free</strong> when you register for both weeks ($1,200 package)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / REGISTER ===== -->
+  <section id="contact" class="bg-contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag tag-white">Inscrivez-vous</div>
+        <h2 style="color:#fff">Submit Your <span class="accent-yellow">Application</span></h2>
+        <p style="color:rgba(255,255,255,0.85)">Spots are limited to 5 students per session. Fill out the form and we'll review your application and be in touch personally.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Parent / Guardian Name</label>
+              <input type="text" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="jane@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label>Child's Grade (Fall 2026)</label>
+              <select>
+                <option value="">Select grade...</option>
+                <option>1st Grade</option>
+                <option>2nd Grade</option>
+                <option>3rd Grade</option>
+                <option>4th Grade</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Preferred Session</label>
+            <select>
+              <option value="">Select a session...</option>
+              <option>Week 1 — July 6–10 ($600)</option>
+              <option>Week 2 — July 13–17 ($600)</option>
+              <option>Both Weeks — July 6–17 ($1,200 + free assessment)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Extended Hours Add-on? (+$100/week)</label>
+            <select>
+              <option value="">Please select...</option>
+              <option>Yes, extended hours until 5:00 PM</option>
+              <option>No, standard pickup at 3:00 PM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Child's French language experience</label>
+            <select>
+              <option value="">Please select...</option>
+              <option>French immersion school — very comfortable</option>
+              <option>Some French exposure — basic familiarity</option>
+              <option>Little to no prior French</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Anything else we should know?</label>
+            <textarea placeholder="Allergies, learning needs, questions, or anything about your child..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Submit Application</button>
+          <p class="form-note">We review every application personally and will reply by email within 24–48 hours. Payment is by Interac e-Transfer, details provided upon acceptance.</p>
+        </form>
+        <div class="contact-info">
+          <div class="ci-item">
+            <i class="ph-duotone ph-map-pin ci-icon"></i>
+            <div><strong>Location</strong><br>Address shared upon registration confirmation</div>
+          </div>
+          <div class="ci-item">
+            <i class="ph-duotone ph-calendar ci-icon"></i>
+            <div><strong>Session Dates</strong><br>Week 1: July 6–10, 2026<br>Week 2: July 13–17, 2026</div>
+          </div>
+          <div class="ci-item">
+            <i class="ph-duotone ph-clock ci-icon"></i>
+            <div><strong>Hours</strong><br>9:00 AM – 3:00 PM daily<br>Extended to 5:00 PM available</div>
+          </div>
+          <div class="ci-item">
+            <i class="ph-duotone ph-graduation-cap ci-icon"></i>
+            <div><strong>Who</strong><br>Grades 1–4 (completed 2025/26)<br>Max 5 students per session</div>
+          </div>
+          <div class="ci-item">
+            <i class="ph-duotone ph-envelope ci-icon"></i>
+            <div><strong>Contact Us Directly</strong><br>
+              <a href="mailto:patricijapenner@gmail.com" class="contact-email-link">patricijapenner@gmail.com</a><br>
+              <a href="mailto:francescagitto@hotmail.com" class="contact-email-link">francescagitto@hotmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <i class="ph-duotone ph-sun footer-sun-icon"></i>
+        <span>Camp Soleil</span>
+      </div>
+      <p>French Immersion Summer Learning Program &nbsp;·&nbsp; Grades 1–4 &nbsp;·&nbsp; July 2026</p>
+      <p style="margin-top:8px; font-size:0.85rem; color:rgba(255,255,255,0.5)">
+        Patricia Penner &nbsp;·&nbsp; Francesca Gitto
+      </p>
+      <p class="footer-copy">&copy; 2026 Camp Soleil. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
