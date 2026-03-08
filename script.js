@@ -27,20 +27,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Form submission
-function handleSubmit(e) {
+// Form submission — sends to Netlify, then shows custom success UI
+async function handleSubmit(e) {
   e.preventDefault();
   const form = e.target;
-  form.style.display = 'none';
+  const btn = form.querySelector('button[type="submit"]');
 
-  const msg = document.createElement('div');
-  msg.className = 'success-msg show';
-  msg.innerHTML = `
-    <div class="checkmark">🎉</div>
-    <h3>Application received!</h3>
-    <p>Thank you for applying to Camp Soleil. Patricia and Francesca will review your application and reply personally by email within 24–48 hours. Payment details will be provided upon acceptance via e-Transfer.</p>
-  `;
-  form.parentNode.appendChild(msg);
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+
+  try {
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    });
+
+    form.style.display = 'none';
+    const msg = document.createElement('div');
+    msg.className = 'success-msg show';
+    msg.innerHTML = `
+      <div class="checkmark">🎉</div>
+      <h3>Application received!</h3>
+      <p>Thank you for applying to Camp Soleil. Patricia and Francesca will review your application and reply personally by email within 24–48 hours. Payment details will be provided upon acceptance via e-Transfer.</p>
+    `;
+    form.parentNode.appendChild(msg);
+  } catch (err) {
+    btn.textContent = 'Submit Application';
+    btn.disabled = false;
+    alert('Something went wrong — please email us directly at patricijapenner@gmail.com');
+  }
 }
 
 // Animate evaluation bars on scroll into view
