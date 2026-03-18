@@ -410,10 +410,12 @@ section { padding: 60px 0; }
 .big-num { display: block; font-family: 'Fredoka One', cursive; font-size: 2.2rem; color: var(--dark); }
 .small-label { font-size: 0.78rem; font-weight: 700; color: var(--dark); }
 
-.about-highlights { margin-top: 24px; display: flex; flex-direction: column; gap: 16px; }
+.about-text p { margin-bottom: 0.6rem; }
+.about-text h2 { margin-bottom: 0.5rem; }
+.about-highlights { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
 .highlight-item { display: flex; align-items: flex-start; gap: 12px; }
 .hi-icon { font-size: 1.2rem; margin-top: 2px; display: flex; align-items: center; }
-.highlight-item strong { display: block; margin-bottom: 2px; }
+.highlight-item strong { display: block; margin-bottom: 1px; }
 .highlight-item small { color: #9ca3af; }
 
 
