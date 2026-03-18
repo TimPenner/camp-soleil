@@ -897,8 +897,9 @@ footer p { font-size: 0.9rem; margin-bottom: 6px; }
   }
 
   .team-photo-placeholder { height: 340px; }
-  .hero-visual { order: -1; }
-  .hero-img-frame { max-height: 280px; }
+  .hero-visual { order: -1; margin-bottom: 16px; }
+  .hero-img-frame { overflow: hidden; }
+  .hero-img-placeholder { height: 280px; }
   .hero-photo { border-radius: 20px; }
   .floating-card { display: none; }
 
