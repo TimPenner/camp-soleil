@@ -884,12 +884,16 @@ footer p { font-size: 0.9rem; margin-bottom: 6px; }
   .nav-links { display: none; }
   .hamburger { display: block; }
 
+  .hero-banner { height: 280px; }
+
   #hero {
     grid-template-columns: 1fr;
-    padding-top: 90px;
+    padding-top: 40px;
     min-height: auto;
     padding-bottom: 40px;
   }
+
+  .team-photo-placeholder { height: 340px; }
   .hero-visual { display: none; }
 
   .hero-stats { gap: 16px; }
@@ -922,9 +926,11 @@ footer p { font-size: 0.9rem; margin-bottom: 6px; }
 }
 
 @media (max-width: 480px) {
+  .hero-banner { height: 220px; }
   .hero-buttons { flex-direction: column; }
   .btn { width: 100%; text-align: center; }
   .hero-stats { justify-content: center; }
   .contact-form { padding: 24px; }
   h1 { font-size: 2rem; }
+  .team-photo-placeholder { height: 280px; }
 }
