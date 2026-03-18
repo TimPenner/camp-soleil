@@ -897,13 +897,18 @@ footer p { font-size: 0.9rem; margin-bottom: 6px; }
   }
 
   .team-photo-placeholder { height: 340px; }
-  .hero-visual { display: none; }
+  .hero-visual { order: -1; }
+  .hero-img-frame { max-height: 280px; }
+  .hero-photo { border-radius: 20px; }
+  .floating-card { display: none; }
 
   .hero-stats { gap: 16px; }
   .stat-num { font-size: 1.8rem; }
 
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .about-visual { display: none; }
+  .about-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-visual { order: -1; }
+  .about-img-placeholder { height: 260px; border-radius: 20px; }
+  .about-badge-float { bottom: -12px; right: 12px; }
 
   .program-grid { grid-template-columns: 1fr; }
   .program-grid-2 { grid-template-columns: 1fr; }
