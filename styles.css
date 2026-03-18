@@ -580,7 +580,7 @@ section { padding: 60px 0; }
 /* ===== SCHEDULE / TIMELINE ===== */
 .schedule-timeline {
   max-width: 680px;
-  margin: 0 auto 56px;
+  margin: 0 auto 36px;
   position: relative;
 }
 .schedule-timeline::before {
@@ -598,7 +598,7 @@ section { padding: 60px 0; }
   grid-template-columns: 100px 24px 1fr;
   gap: 0 16px;
   align-items: flex-start;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   position: relative;
 }
 .tl-item.last { margin-bottom: 0; }
