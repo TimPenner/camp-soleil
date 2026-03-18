@@ -598,7 +598,7 @@ section { padding: 60px 0; }
   grid-template-columns: 100px 24px 1fr;
   gap: 0 16px;
   align-items: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   position: relative;
 }
 .tl-item.last { margin-bottom: 0; }
@@ -622,12 +622,13 @@ section { padding: 60px 0; }
 
 .tl-content {
   background: #fafafa;
-  border-radius: 12px;
-  padding: 12px 16px;
+  border-radius: 10px;
+  padding: 8px 14px;
   border: 1px solid #f0f0f0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
-.tl-content strong { display: block; margin-bottom: 2px; color: var(--dark); }
+.tl-content strong { display: block; margin-bottom: 1px; color: var(--dark); }
 
 .session-cards {
   display: grid;
