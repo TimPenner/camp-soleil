@@ -456,9 +456,7 @@
         <p style="color:rgba(255,255,255,0.85)">Spots are limited to 5 students per session. Fill out the form and we'll review your application and be in touch personally.</p>
       </div>
       <div class="contact-grid">
-        <form class="contact-form" name="application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
-          <input type="hidden" name="form-name" value="application" />
-          <input type="hidden" name="bot-field" style="display:none" />
+        <form class="contact-form" action="https://formspree.io/f/mqeynnbl" method="POST" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
               <label>Parent / Guardian Name</label>

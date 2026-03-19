@@ -27,7 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Form submission — sends to Netlify, then shows custom success UI
+// Form submission — sends to Formspree, then shows custom success UI
 async function handleSubmit(e) {
   e.preventDefault();
   const form = e.target;
@@ -37,11 +37,12 @@ async function handleSubmit(e) {
   btn.disabled = true;
 
   try {
-    await fetch('/', {
+    const res = await fetch('https://formspree.io/f/mqeynnbl', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(form)).toString()
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
     });
+    if (!res.ok) throw new Error('Form submission failed');
 
     form.style.display = 'none';
     const msg = document.createElement('div');
@@ -49,7 +50,7 @@ async function handleSubmit(e) {
     msg.innerHTML = `
       <div class="checkmark">🎉</div>
       <h3>Application received!</h3>
-      <p>Thank you for applying to Camp Soleil. Patricia and Francesca will review your application and reply personally by email within 24–48 hours. Payment details will be provided upon acceptance via e-Transfer.</p>
+      <p>Thank you for applying to SoleilBrille. Patricia and Francesca will review your application and reply personally by email within 24–48 hours. Payment details will be provided upon acceptance via e-Transfer.</p>
     `;
     form.parentNode.appendChild(msg);
   } catch (err) {
